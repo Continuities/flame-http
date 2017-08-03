@@ -44,7 +44,7 @@ app.post('/', (req, res) => {
 });
 
 app.listen(argv.port, () => {
-  console.log(`FlamePaint live on port ${argv.port}!`);
+  console.log(`flame-http live on port ${argv.port}!`);
 });
 
 const send = throttle(100, input => {
