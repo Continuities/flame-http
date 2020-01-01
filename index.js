@@ -57,6 +57,7 @@ const send = throttle(100, input => {
       }
       else {
         console.info(`Posted pattern to back end at ${argv.backend}:${argv.backport}`);
+        console.info(data);
         resolve();
       }
     });
@@ -68,5 +69,5 @@ function serializeRows(rows) {
 }
 
 function serializeCols(cols) {
-  return cols.reduce((ret, val) => `${ret ? `${ret} ` : ''}${val ? '1' : '0'}`, '');
+  return cols.reduce((ret, val) => `${ret ? `${ret}` : ''}${val ? '1' : '0'}`, '');
 }
