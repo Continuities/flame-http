@@ -4,9 +4,9 @@
   "description": "Simple HTTP server that accepts JSON and sends UDP to a flame panel backend",
   "main": "index.js",
   "dependencies": {
-    "body-parser": "^1.17.2",
+    "body-parser": "^1.20.1",
     "dgram": "^1.0.1",
-    "express": "^4.15.3",
+    "express": "^4.18.2",
     "throttle-debounce": "^1.0.1",
     "yargs": "^8.0.2"
   },
